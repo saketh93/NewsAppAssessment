@@ -1,0 +1,42 @@
+/*
+  Localizable.strings
+  NewsAppAssessment
+
+  Created by Saketh Manemala.
+  
+*/
+
+"tab_news" = "Noticias";
+"tab_favorites" = "Favoritos";
+"search_placeholder" = "Buscar noticias…";
+"select_country" = "Seleccionar País";
+"settings_title" = "Configuración";
+"settings_appearance" = "Apariencia";
+"settings_language" = "Idioma";
+"error_title" = "No se pudieron cargar las noticias";
+"error_retry" = "Reintentar";
+"empty_news_title" = "No se encontraron artículos";
+"empty_news_subtitle" = "Intenta con otra búsqueda o país.";
+"empty_favorites_title" = "Sin Favoritos";
+"empty_favorites_subtitle" = "Toca el corazón en cualquier artículo para guardarlo aquí.";
+"something_went_wrong" = "Algo salió mal. Por favor intenta de nuevo.";
+"read_full_article" = "Leer Artículo Completo";
+"clear_all" = "Limpiar Todo";
+"cancel" = "Cancelar";
+"done" = "Listo";
+"by_author" = "Por %@";
+"added_to_favorites" = "Agregado a favoritos ❤️";
+"removed_from_favorites" = "Eliminado de favoritos";
+"loading" = "Cargando…";
+"top_headlines" = "Principales Titulares";
+"remove_all_confirm_title" = "¿Eliminar todos los favoritos?";
+
+"error_invalid_url" = "La dirección de la solicitud no es válida.";
+"error_no_data" = "El servidor no devolvió datos.";
+"error_decoding" = "No pudimos leer la respuesta de noticias.";
+"error_server" = "El servidor devolvió un error (%d). Por favor intenta de nuevo.";
+"error_unauthorized" = "La clave API falta o no es válida.";
+"error_no_internet" = "Parece que estás sin conexión. Verifica tu conexión.";
+
+"a11y_favorite_add" = "Agregar a favoritos";
+"a11y_favorite_remove" = "Eliminar de favoritos";

@@ -1,0 +1,42 @@
+/*
+  Localizable.strings
+  NewsAppAssessment
+
+  Created by Saketh Manemala.
+  
+*/
+
+"tab_news" = "Nachrichten";
+"tab_favorites" = "Favoriten";
+"search_placeholder" = "Nachrichten suchen…";
+"select_country" = "Land auswählen";
+"settings_title" = "Einstellungen";
+"settings_appearance" = "Erscheinungsbild";
+"settings_language" = "Sprache";
+"error_title" = "Nachrichten konnten nicht geladen werden";
+"error_retry" = "Erneut versuchen";
+"empty_news_title" = "Keine Artikel gefunden";
+"empty_news_subtitle" = "Versuche eine andere Suche oder ein anderes Land.";
+"empty_favorites_title" = "Noch keine Favoriten";
+"empty_favorites_subtitle" = "Tippe auf das Herz eines Artikels, um ihn hier zu speichern.";
+"something_went_wrong" = "Etwas ist schiefgelaufen. Bitte versuche es erneut.";
+"read_full_article" = "Vollständigen Artikel lesen";
+"clear_all" = "Alle löschen";
+"cancel" = "Abbrechen";
+"done" = "Fertig";
+"by_author" = "Von %@";
+"added_to_favorites" = "Zu Favoriten hinzugefügt";
+"removed_from_favorites" = "Aus Favoriten entfernt";
+"loading" = "Wird geladen…";
+"top_headlines" = "Top-Schlagzeilen";
+"remove_all_confirm_title" = "Alle Favoriten entfernen?";
+
+"error_invalid_url" = "Die Anfrageadresse ist ungültig.";
+"error_no_data" = "Der Server hat keine Daten zurückgegeben.";
+"error_decoding" = "Die Antwort konnte nicht gelesen werden.";
+"error_server" = "Der Server hat einen Fehler zurückgegeben (%d). Bitte versuche es erneut.";
+"error_unauthorized" = "Der API-Schlüssel fehlt oder ist ungültig.";
+"error_no_internet" = "Du bist offline. Überprüfe deine Verbindung.";
+
+"a11y_favorite_add" = "Zu Favoriten hinzufügen";
+"a11y_favorite_remove" = "Aus Favoriten entfernen";

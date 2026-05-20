@@ -1,0 +1,42 @@
+/*
+  Localizable.strings
+  NewsAppAssessment
+
+  Created by Saketh Manemala.
+  
+*/
+
+"tab_news" = "News";
+"tab_favorites" = "Favorites";
+"search_placeholder" = "Search news…";
+"select_country" = "Select Country";
+"settings_title" = "Settings";
+"settings_appearance" = "Appearance";
+"settings_language" = "Language";
+"error_title" = "Could not load news";
+"error_retry" = "Retry";
+"empty_news_title" = "No articles found";
+"empty_news_subtitle" = "Try a different search or country.";
+"empty_favorites_title" = "No Favorites Yet";
+"empty_favorites_subtitle" = "Tap the favorite on any article to save it here.";
+"something_went_wrong" = "Something went wrong. Please try again.";
+"read_full_article" = "Read Full Article";
+"clear_all" = "Clear All";
+"cancel" = "Cancel";
+"done" = "Done";
+"by_author" = "By %@";
+"added_to_favorites" = "Added to favorites ❤️";
+"removed_from_favorites" = "Removed from favorites";
+"loading" = "Loading…";
+"top_headlines" = "Top Headlines";
+"remove_all_confirm_title" = "Remove all favorites?";
+
+"error_invalid_url" = "The request address is invalid.";
+"error_no_data" = "The server returned no data.";
+"error_decoding" = "We couldn’t read the news response.";
+"error_server" = "The server returned an error (%d). Please try again.";
+"error_unauthorized" = "The API key is missing or invalid.";
+"error_no_internet" = "You appear to be offline. Check your connection.";
+
+"a11y_favorite_add" = "Add to favorites";
+"a11y_favorite_remove" = "Remove from favorites";

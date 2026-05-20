@@ -1,0 +1,42 @@
+/*
+  Localizable.strings
+  NewsAppAssessment
+
+  Created by Saketh Manemala.
+  
+*/
+
+"tab_news" = "Actualités";
+"tab_favorites" = "Favoris";
+"search_placeholder" = "Rechercher des actualités…";
+"select_country" = "Sélectionner un pays";
+"settings_title" = "Paramètres";
+"settings_appearance" = "Apparence";
+"settings_language" = "Langue";
+"error_title" = "Impossible de charger les actualités";
+"error_retry" = "Réessayer";
+"empty_news_title" = "Aucun article trouvé";
+"empty_news_subtitle" = "Essayez une autre recherche ou un autre pays.";
+"empty_favorites_title" = "Aucun favori";
+"empty_favorites_subtitle" = "Appuyez sur le cœur d'un article pour le sauvegarder ici.";
+"something_went_wrong" = "Une erreur s'est produite. Veuillez réessayer.";
+"read_full_article" = "Lire l'article complet";
+"clear_all" = "Tout effacer";
+"cancel" = "Annuler";
+"done" = "Terminé";
+"by_author" = "Par %@";
+"added_to_favorites" = "Ajouté aux favoris";
+"removed_from_favorites" = "Supprimé des favoris";
+"loading" = "Chargement…";
+"top_headlines" = "À la une";
+"remove_all_confirm_title" = "Supprimer tous les favoris ?";
+
+"error_invalid_url" = "L'adresse de la requête est invalide.";
+"error_no_data" = "Le serveur n'a renvoyé aucune donnée.";
+"error_decoding" = "Impossible de lire la réponse.";
+"error_server" = "Le serveur a renvoyé une erreur (%d). Veuillez réessayer.";
+"error_unauthorized" = "La clé API est manquante ou invalide.";
+"error_no_internet" = "Vous semblez hors ligne. Vérifiez votre connexion.";
+
+"a11y_favorite_add" = "Ajouter aux favoris";
+"a11y_favorite_remove" = "Supprimer des favoris";
