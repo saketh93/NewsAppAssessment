@@ -1,4 +1,4 @@
-# NewsAppAssesment
+# NewsAppAssessment
 
 SwiftUI / Swift Concurrency news app built for the WSA iOS Engineering Assignment. The full requirement document is included in this repository.
 
@@ -25,22 +25,22 @@ SwiftUI / Swift Concurrency news app built for the WSA iOS Engineering Assignmen
 ## Quick start
 
 ```bash
-open NewsAppAssesment.xcodeproj
+open NewsAppAssessment.xcodeproj
 # Select an iPhone simulator and press ⌘R
 ```
 
 CLI build / test:
 
 ```bash
-xcodebuild -project NewsAppAssesment.xcodeproj \
-           -scheme NewsAppAssesment \
-           -destination 'platform=iOS Simulator,name=iPhone 15' \
+xcodebuild -project NewsAppAssessment.xcodeproj \
+           -scheme NewsAppAssessment \
+           -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
            build
 
 xcodebuild test \
-           -project NewsAppAssesment.xcodeproj \
-           -scheme NewsAppAssesment \
-           -destination 'platform=iOS Simulator,name=iPhone 15'
+           -project NewsAppAssessment.xcodeproj \
+           -scheme NewsAppAssessment \
+           -destination 'platform=iOS Simulator,name=iPhone 17 Pro'
 ```
 
 ### API key
@@ -58,21 +58,21 @@ A missing key in `RELEASE` causes `NewsService.fetchArticles` to throw `NetworkE
 
 ## Architecture in one paragraph
 
-`NewsAppAssesmentApp` constructs the dependency graph in a single composition root (`AppDependencies`). Each collaborator — `NetworkService`, `NewsService`, `FavoritesService`, `AnalyticsService`, `ThemeManager`, `LanguageManager`, `APIKeyProviding` — is held **by protocol**, so substitution in tests or future remoting is trivial. SwiftUI views receive their services through their initializers; view models are `@MainActor` and `final`. Favorites mutation is serialized inside a `@ModelActor actor` so concurrent toggles can't race on the SwiftData context. See [APP_STRUCTURE.md](APP_STRUCTURE.md) for diagrams.
+`NewsAppAssessmentApp` constructs the dependency graph in a single composition root (`AppDependencies`). Each collaborator — `NetworkService`, `NewsService`, `FavoritesService`, `AnalyticsService`, `ThemeManager`, `LanguageManager`, `APIKeyProviding` — is held **by protocol**, so substitution in tests or future remoting is trivial. SwiftUI views receive their services through their initializers; view models are `@MainActor` and `final`. Favorites mutation is serialized inside a `@ModelActor actor` so concurrent toggles can't race on the SwiftData context. See [APP_STRUCTURE.md](APP_STRUCTURE.md) for diagrams.
 
 ---
 
 ## Testing
 
-- Unit tests: `NewsAppAssesmentTests/Tests/*` — Swift Testing (`@Test`, `#expect`). Coverage spans model decoding, networking, services, every view model, and the analytics / API-key plumbing.
-- UI tests: `NewsAppAssesmentUITests/` — Swift Testing `@Suite` driving `XCUIApplication`, using stable accessibility identifiers from `Constants.A11yID`.
-- Mocks: protocol-conforming doubles in `NewsAppAssesmentTests/Mocks/`. No `URLProtocol` stubs needed because services are wrapped by protocols.
+- Unit tests: `NewsAppAssessmentTests/Tests/*` — Swift Testing (`@Test`, `#expect`). Coverage spans model decoding, networking, services, every view model, and the analytics / API-key plumbing.
+- UI tests: `NewsAppAssessmentUITests/` — Swift Testing `@Suite` driving `XCUIApplication`, using stable accessibility identifiers from `Constants.A11yID`.
+- Mocks: protocol-conforming doubles in `NewsAppAssessmentTests/Mocks/`. No `URLProtocol` stubs needed because services are wrapped by protocols.
 
 ```bash
 # Run the entire test plan
 xcodebuild test \
-    -project NewsAppAssesment.xcodeproj \
-    -scheme NewsAppAssesment \
+    -project NewsAppAssessment.xcodeproj \
+    -scheme NewsAppAssessment \
     -destination 'platform=iOS Simulator,name=iPhone 15'
 ```
 
@@ -102,7 +102,7 @@ Open `Console.app` on macOS to view all log lines from the simulator.
 
 ## Localization
 
-Strings live in `NewsAppAssesment/Resources/<lang>.lproj/Localizable.strings`. To add a new key, update **all four** files (English, Spanish, French, German), then expose it via `Constants.LocalizationKeys`. Look up at call sites with `languageManager.localize(_:)`. New languages are added by:
+Strings live in `NewsAppAssessment/Resources/<lang>.lproj/Localizable.strings`. To add a new key, update **all four** files (English, Spanish, French, German), then expose it via `Constants.LocalizationKeys`. Look up at call sites with `languageManager.localize(_:)`. New languages are added by:
 1. Creating a new `<code>.lproj/Localizable.strings`.
 2. Adding the case to `AppLanguage` in `LanguageManager.swift`.
 
@@ -117,7 +117,7 @@ Every interactive element carries an `accessibilityLabel` and, where helpful, an
 ## Project layout
 
 ```
-NewsAppAssesment/
+NewsAppAssessment/
 ├── App/            Composition root (AppDependencies)
 ├── Models/         Article + SwiftData entities
 ├── Networking/     URLSession layer, API key provider, endpoint, errors
@@ -129,9 +129,9 @@ NewsAppAssesment/
 ```
 
 ```
-NewsAppAssesmentTests/        Swift Testing — unit tests + mocks + factories
-NewsAppAssesmentUITests/      Swift Testing — UI suite (drives XCUIApplication)
-NewsAppAssesment/             Config.xcconfig (build-time API key)
+NewsAppAssessmentTests/        Swift Testing — unit tests + mocks + factories
+NewsAppAssessmentUITests/      Swift Testing — UI suite (drives XCUIApplication)
+NewsAppAssessment/             Config.xcconfig (build-time API key)
 .swiftlint.yml                 Zero-warning lint config
 ```
 
