@@ -10,17 +10,17 @@ enum AppTheme: String, CaseIterable, Identifiable, Codable {
 
     var colorScheme: ColorScheme? {
         switch self {
-        case .system: return nil
-        case .light:  return .light
-        case .dark:   return .dark
+        case .system: nil
+        case .light: .light
+        case .dark: .dark
         }
     }
 
     var iconName: String {
         switch self {
-        case .system: return Constants.SFSymbols.circleHalfFilled
-        case .light:  return Constants.SFSymbols.sunMaxFill
-        case .dark:   return Constants.SFSymbols.moonFill
+        case .system: Constants.SFSymbols.circleHalfFilled
+        case .light: Constants.SFSymbols.sunMaxFill
+        case .dark: Constants.SFSymbols.moonFill
         }
     }
 }

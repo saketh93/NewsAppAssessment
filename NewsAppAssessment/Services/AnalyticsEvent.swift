@@ -15,17 +15,17 @@ enum AnalyticsEvent: Sendable {
 
     var name: String {
         switch self {
-        case .appLaunched:          return "app_launched"
-        case .newsLoaded:           return "news_loaded"
-        case .newsLoadFailed:       return "news_load_failed"
-        case .searchPerformed:      return "search_performed"
-        case .articleOpened:        return "article_opened"
-        case .favoriteAdded:        return "favorite_added"
-        case .favoriteRemoved:      return "favorite_removed"
-        case .allFavoritesCleared:  return "all_favorites_cleared"
-        case .countryChanged:       return "country_changed"
-        case .languageChanged:      return "language_changed"
-        case .themeChanged:         return "theme_changed"
+        case .appLaunched: "app_launched"
+        case .newsLoaded: "news_loaded"
+        case .newsLoadFailed: "news_load_failed"
+        case .searchPerformed: "search_performed"
+        case .articleOpened: "article_opened"
+        case .favoriteAdded: "favorite_added"
+        case .favoriteRemoved: "favorite_removed"
+        case .allFavoritesCleared: "all_favorites_cleared"
+        case .countryChanged: "country_changed"
+        case .languageChanged: "language_changed"
+        case .themeChanged: "theme_changed"
         }
     }
 
